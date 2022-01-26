@@ -6,28 +6,27 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-        <img src="https://mail.google.com/mail/u/0?ui=2&ik=026812618f&attid=0.2&permmsgid=msg-f:
-        1715588218144857419&th=17cefe65135e9d4b&view=att&disp=safe&realattid=17cefe6150c5760cc143" 
+        <img src="{{foto}}"
         alt="imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
       </li>
 
       <li class="nav-item pl-3">
-      <p class="m-0 font-weight-bold text-white fs-16 ">Nome do usuário</p>
+      <p class="m-0 font-weight-bold text-white fs-16 ">Olá, {{nome}}</p>
       </li>
 
       <li class="nav-item pl-3">
         <a href="">
-          <p class="text-white fs-16 m-0">  
+          <p class="text-white fs-16 m-0">
             <i class="fa fa-pencil-square-o " aria-hidden="true"></i> </p>
-        </a>  
+        </a>
       </li>
     </ul>
-      
-      <ul class= "navbar-nav ml-auto d-flex align-items-center"> 
-          <li class="nav-item pl-3">  
-            <a class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
 
-          </li> 
+      <ul class= "navbar-nav ml-auto d-flex align-items-center">
+          <li class="nav-item pl-3">
+            <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true" ></i></a>
+
+          </li>
       </ul>
 
 
